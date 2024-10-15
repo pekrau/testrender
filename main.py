@@ -104,7 +104,7 @@ def post(text:str):
         chunk = chunk.strip()
         if chunk:
             paras.append(P(chunk))
-            length = len(chunk)
+            length += len(chunk)
     paras.append(f"Characters: {length}")
     return Titled(
         "Text display",
